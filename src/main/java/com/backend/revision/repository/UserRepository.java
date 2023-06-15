@@ -1,5 +1,9 @@
 package com.backend.revision.repository;
 
-public class UserRepository {
+import com.backend.revision.models.*;
+import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
 
+public interface UserRepository extends JpaRepository<User, List>{
+	
 }
