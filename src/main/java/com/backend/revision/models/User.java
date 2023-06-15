@@ -30,12 +30,17 @@ public class User {
 	@Column(name="password")
 	private String password;
 	
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public User(String fullnames, String email, long nID, String phoneNumber, String address, String username,
 			String password) {
 		super();
 		this.fullnames = fullnames;
 		this.email = email;
-		NID = nID;
+		this.NID = nID;
 		this.phoneNumber = phoneNumber;
 		this.address = address;
 		this.username = username;
